@@ -8,9 +8,6 @@ export default [
 
     logUrl(req)
 
-    // Only allow house members
-    // onlyHouseMembers(...args)
-
     if (!inviteId) {
       return res(
         ctx.status(404),
