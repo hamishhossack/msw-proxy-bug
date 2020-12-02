@@ -1,17 +1,3 @@
-export const MEMBERSHIP_TIERS = {
-  PUBLIC: 'PUBLIC',
-  FRIENDS: 'FRIENDS',
-  EVERY_HOUSE: 'EVERY_HOUSE',
-  LOCAL_HOUSE: 'LOCAL_HOUSE',
-  EVERY_PLUS_HOUSE: 'EVERY_PLUS_HOUSE',
-  HOUSE: 'HOUSE',
-}
+import consola from 'consola'
 
-const HOUSE_TIERS = [
-  MEMBERSHIP_TIERS.HOUSE,
-  MEMBERSHIP_TIERS.EVERY_HOUSE,
-  MEMBERSHIP_TIERS.EVERY_PLUS_HOUSE,
-  MEMBERSHIP_TIERS.LOCAL_HOUSE,
-]
-
-export const logUrl = (req) => console.info('🦸🏻  Mocking url', req.url.pathname)
+export const logUrl = (req) => consola.info('🦸🏻  Mocking url', req.url.pathname)
